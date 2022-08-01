@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(src/img/Fundo-site-DC.png);
+  background-size: cover; /* cover = 100% */
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #f1ecff;
+}
+
+.ball {
+  height: 2rem;
+  width: 2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none; /*Tirar a bolinha da ul*/ 
+  align-items: center;
+}
+
+.herois {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+  display: flex;
+  
+}
+
+.card {
+  opacity: 0;
+  padding: 1rem;
+  margin: 5rem;
+  border-radius: 10px;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card.selecionado {
+  opacity: 1;
+  z-index: 1;  /*evitar que o card fique na frente do outro*/
+}
+
+button {
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 100rem;
+  margin-top: 1rem;
+
+  background-color: #f1ecff;
+  transition: filter 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+.seta-voltar {
+  transform: rotateY(180deg);
+}
+
+.batman {
+  background-image: url(src/img/batcave.jpg);
+  
+}
+
+.wonder {
+  background-image: url(src/img/Themyscira-bg.jpg);
+  background-size: 100%;
+}
+
+.superman {
+  background-image: url(src/img/DC_BG_superman.jpg);
+  background-size: 100%;
+}
+
+.harley {
+  background-image: url(src/img/harley_quinn_bg_1.jpg);
+}
+
+.card .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+
+  color: #f1ecff;
+  background-color: rgba(179, 179, 179, 0.747);
+
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card .name .poke {
+  font-size: 22px;
+  margin-left: 0.5rem;
+}
+
+.card .name .hp {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+}
+
+.card .img {
+  text-align: center;
+  max-width: 100%;
+  max-width: 280px;
+  padding: 20px;
+}
+
+.info {
+  color: #f1ecff;
+  background-color: #333;
+  font-size: 14px;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  padding: 5px;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  max-height: 120px;
+  overflow-y: auto;
+}
+

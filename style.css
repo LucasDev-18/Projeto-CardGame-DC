@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(src/img/Fundo-site-DC.png);
+  background-image: url(img/Background/Fundo-site-DC.png);
   background-size: cover; /* cover = 100% */
   font-family: 'Outfit', sans-serif;
   min-height: 100vh;
@@ -91,22 +91,22 @@ button:hover {
 }
 
 .batman {
-  background-image: url(src/img/batcave.jpg);
+  background-image: url(img/Background/batcave.jpg);
   
 }
 
 .wonder {
-  background-image: url(src/img/Themyscira-bg.jpg);
+  background-image: url(img/Background/Themyscira-bg.jpg);
   background-size: 100%;
 }
 
 .superman {
-  background-image: url(src/img/DC_BG_superman.jpg);
+  background-image: url(img/Background/DC_BG_superman.jpg);
   background-size: 100%;
 }
 
 .harley {
-  background-image: url(src/img/harley_quinn_bg_1.jpg);
+  background-image: url(img/Background/harley_quinn_bg_1.jpg);
 }
 
 .card .name {
@@ -124,7 +124,7 @@ button:hover {
   border-top-right-radius: 0.5rem;
 }
 
-.card .name .poke {
+.card .name .hero {
   font-size: 22px;
   margin-left: 0.5rem;
 }
@@ -163,4 +163,3 @@ button:hover {
   max-height: 120px;
   overflow-y: auto;
 }
-

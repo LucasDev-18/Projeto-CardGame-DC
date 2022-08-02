@@ -38,7 +38,7 @@ main {
 }
 
 ul {
-  list-style: none; /*Tirar a bolinha da ul*/ 
+  list-style: none; 
   align-items: center;
 }
 
@@ -47,7 +47,6 @@ ul {
   height: 30rem;
   position: relative;
   display: flex;
-  
 }
 
 .card {
@@ -67,7 +66,7 @@ ul {
 
 .card.selecionado {
   opacity: 1;
-  z-index: 1;  /*evitar que o card fique na frente do outro*/
+  z-index: 1;  
 }
 
 button {
